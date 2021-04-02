@@ -151,8 +151,8 @@ jobs:
     # Duration after which artifact will expire in days. 0 means using default retention.
 Minimum 1 day. Maximum 90 days unless changed from the repository settings page.
 
-        retention-days: # optional
-
+      retention-days: 3
+      
     - name: Run On-Target Tests
       if: ${{ matrix.debug-macros == 'NORMAL_DEBUG'}}
       working-directory: ${{ github.workspace }}/Build
