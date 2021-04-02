@@ -14,7 +14,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        debug-macros: ['ALL_DEBUG', 'NORMAL_DEBUG']
+        debug-macros: ['NORMAL_DEBUG']
         os: [ubuntu-20.04]
         # If ccache is broken and you would like to bust the ccache cache on Github Actions, increment this:
         ccache-mark: [0]
